@@ -1,0 +1,6 @@
+{
+    "ConnectionStrings": {
+        "NorthwindMdf": "Server=(LocalDB)\\MSSQLLocalDB; AttachDbFilename=C:\\Users\\Daksh\\source\\repos\\Assignment2_DakshPatel\\Assignment2_DakshPatel\\AppData\\Data.mdf;Trusted_Connection=Yes;"
+    }
+}
+                                                    
