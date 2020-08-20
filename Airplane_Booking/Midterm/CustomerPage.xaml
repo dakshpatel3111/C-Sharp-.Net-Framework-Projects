@@ -1,0 +1,82 @@
+﻿<Window x:Class="Midterm.CustomerPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Midterm"
+        mc:Ignorable="d"
+        Title="CustomerPage" Height="600" Width="900">
+    <Grid Background="#FFC6CAF0">
+
+        <DockPanel Margin="2,-58,0,487" HorizontalAlignment="Left" Width="270">
+            <Menu x:Name="menu" Width="234" Height="28" Background="#FFC6CAF0">
+                <MenuItem x:Name="menu2" Header="File" FontSize="16">
+                    <MenuItem x:Name="new" FontSize="14" Header="New" Click="addbtn_Click"/>
+                    <MenuItem x:Name="save" FontSize="14" Header="Save" Click="addbtn_Click"/>
+                    <MenuItem x:Name="quit" FontSize="14" Header="Quit" Click="exit_Click"/>
+                </MenuItem>
+                <MenuItem x:Name="edit" FontSize="16" Header="Edit">
+                    <MenuItem x:Name="insert" FontSize="14" Header="Insert" Click="addbtn_Click"/>
+                    <MenuItem x:Name="update" FontSize="14" Header="Update" Click="upbtn_Click"/>
+                    <MenuItem x:Name="delete" FontSize="14" Header="Delete" Click="delbtn_Click"/>
+
+                </MenuItem>
+                <MenuItem x:Name="menu3" Header="Help" FontSize="16" Click="about_Click"/>
+                <MenuItem x:Name="usemode" FontSize="20" Foreground="#FFF74040" />
+
+            </Menu>
+
+        </DockPanel>
+        <Label Content="Customer Page" HorizontalAlignment="Left" Margin="272,10,0,0" VerticalAlignment="Top" Height="72" Width="361" FontSize="48" FontWeight="Bold" Background="{x:Null}" FontFamily="Bahnschrift Light" Foreground="#FF197A09" BorderBrush="Black"/>
+        <ListBox x:Name="clistbox" Margin="334,87,92,214" Height="233.04" >
+            <ListBox.ContextMenu>
+                <ContextMenu>
+                    <MenuItem x:Name="contextAdd" Click="addbtn_Click" Header="Add"/>
+                    <MenuItem x:Name="contextupdate" Click="upbtn_Click" Header="Update"/>
+                    <MenuItem x:Name="contextdelete" Click="delbtn_Click" Header="Delete"/>
+                    
+
+                </ContextMenu>
+            </ListBox.ContextMenu>
+        </ListBox>
+        <StackPanel Margin="38,102,614,213">
+            <Button x:Name="addbtn" Content="Save/Add" Height="59" Click="addbtn_Click" Foreground="#FFE0F0D0" Background="#FF82C752" FontSize="20"/>
+            <Button x:Name="upbtn" Content="Edit" Height="61" Click="upbtn_Click" Foreground="#FFE0F0D0" Background="#FF82C752" FontSize="20"/>
+            <Button x:Name="delbtn" Content="Delete" Height="61" Click="delbtn_Click" Foreground="#FFE0F0D0" Background="#FF82C752" FontSize="20"/>
+            <Button x:Name="backbtn" Content="Back" Height="65" Click="backbtn_Click" Foreground="#FFE0F0D0" Background="#FF82C752" FontSize="20"/>
+        </StackPanel>
+        <Separator HorizontalAlignment="Left" Height="40" Margin="34,362,0,0" VerticalAlignment="Top" Width="812"/>
+
+        <Grid x:Name="grid" HorizontalAlignment="Center" Height="136" Margin="0,394,0,0" VerticalAlignment="Top" Width="840">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="32*"/>
+                <RowDefinition Height="32*"/>
+
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="30*"/>
+                <ColumnDefinition Width="70*"/>
+                <ColumnDefinition Width="30*"/>
+                <ColumnDefinition Width="50*"/>
+                <ColumnDefinition Width="30*"/>
+                <ColumnDefinition Width="70*"/>
+            </Grid.ColumnDefinitions>
+            <Label Content="Id:" HorizontalAlignment="Center" VerticalAlignment="Center" Height="46" Width="75" FontSize="18"/>
+            <TextBox x:Name="idbox" HorizontalAlignment="Center"  TextWrapping="Wrap" VerticalAlignment="Top" Width="76" Height="40" FontSize="18" Grid.Column="1" Margin="0,17,0,0"/>
+            <Label  Content="Name:" HorizontalAlignment="Left" VerticalAlignment="Center" Width="120" FontSize="18" Grid.Column="2" Height="46" Grid.ColumnSpan="2" Margin="9,0,0,0"/>
+            <TextBox x:Name="namebox" Text="" TextWrapping="Wrap" Margin="30,11,30,17" FontSize="18" Grid.Column="3" Height="40"/>
+            <TextBox x:Name="emailbox" Text="" TextWrapping="Wrap" Margin="14,12,14,19" FontSize="18" Grid.Column="5" Height="45" />
+
+
+            <Label  Content="Email:" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" Width="64" FontSize="18" RenderTransformOrigin="-0.064,0.599" Grid.Column="4" Height="41"/>
+            <TextBox x:Name="addbox" Text=""  TextWrapping="Wrap" Margin="16,12,18,16" FontSize="18" Grid.Column="1" Grid.Row="1" RenderTransformOrigin="0.5,0.5" Height="40"/>
+
+            <TextBox x:Name="phonebox" Text="" TextWrapping="Wrap" Margin="20,10,23,9" FontSize="18" Grid.Column="5" Grid.Row="1" RenderTransformOrigin="0.5,0.5" Height="40"/>
+
+            <Label  Content="Address:" HorizontalAlignment="Left" VerticalAlignment="Center" Width="76" FontSize="18" RenderTransformOrigin="-0.064,0.599" Height="50" Grid.Row="1" Margin="10,0,0,0"/>
+
+            <Label  Content="Phone:" HorizontalAlignment="Left" Margin="0,10,0,0" VerticalAlignment="Top" Width="93" FontSize="18" RenderTransformOrigin="-0.064,0.599" Grid.Column="4" Height="39" Grid.Row="1" Grid.ColumnSpan="2"/>
+
+        </Grid>
+    </Grid>
+</Window>

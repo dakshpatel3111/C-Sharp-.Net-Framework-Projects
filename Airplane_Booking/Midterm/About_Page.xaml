@@ -1,0 +1,15 @@
+﻿<Window x:Class="Midterm.About_Page"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Midterm"
+        mc:Ignorable="d"
+        Title="About_Page" Height="450" Width="800">
+    <Grid Background="#FF9AD8DE">
+        <TextBlock x:Name="textblock" HorizontalAlignment="Left" Height="246" Margin="61,134,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Width="660" Background="#FFA0D878" FontSize="20" Foreground="White"/>
+        <Label Content="About Application" HorizontalAlignment="Left" Height="69" Margin="287,39,0,0" VerticalAlignment="Top" Width="347" FontSize="36" Foreground="#FF158324" FontWeight="Bold"/>
+        <Button x:Name="closebtn" Content="Close" HorizontalAlignment="Left" Margin="61,39,0,0" VerticalAlignment="Top" Height="42" Width="73" Click="closebtn_Click" Background="#FFDEC83D"/>
+
+    </Grid>
+</Window>

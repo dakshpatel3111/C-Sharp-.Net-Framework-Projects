@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="About_Page.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Airline_Page.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="CustomerPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="exit.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Flight_Page.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Menu.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Passenger_Page.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="About_Page.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Airline_Page.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="CustomerPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="exit.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Flight_Page.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Menu.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Passenger_Page.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

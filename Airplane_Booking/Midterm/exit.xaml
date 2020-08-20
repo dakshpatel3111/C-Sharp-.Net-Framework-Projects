@@ -1,0 +1,14 @@
+﻿<Window x:Class="Midterm.exit"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Midterm"
+        mc:Ignorable="d"
+        Title="exit" Height="350" Width="400">
+    <Grid>
+        <Button x:Name="exibtn" Content="Exit" Margin="239,222,47,37" Click="exibtn_Click" Background="#FFE8946D"></Button>
+        <Button x:Name="cancelbtn" Content="Cancel" Margin="74,222,200,37" Click="cancelbtn_Click" Background="#FF61D0E2"></Button>
+        <Label Content="Are you Sure you want to Exit ?" HorizontalAlignment="Left" Margin="74,74,0,0" VerticalAlignment="Top" Height="55" Width="298" FontSize="20"/>
+    </Grid>
+</Window>
