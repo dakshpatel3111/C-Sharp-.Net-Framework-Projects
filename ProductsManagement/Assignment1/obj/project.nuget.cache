@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "YqcJNnx6+NGYWk2yR2UgWBRuQgUq5aPiIEoskXyaBwbV/81KwwLKm5K18VWmySzAv4MFH2R8k+sAGqcaRnLRzQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Daksh\\source\\repos\\Assignment1\\Assignment1\\Assignment1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Daksh\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.3\\microsoft.aspnetcore.app.ref.3.1.3.nupkg.sha512",
+    "C:\\Users\\Daksh\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\Daksh\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}
